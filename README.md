@@ -1,19 +1,23 @@
-# quasar app-onfly (app-onfly)
+# Documentação do Aplicativoo QUASAR
 
-Teste selecao quasar
+Teste ONFLY vue 3 + pinia + QUASAR
 
-## Install the dependencies
+## Comandos para instalar as dependências do projeto
 ```bash
 yarn
 # or
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Para executar o build do aplicativo, execute o seguinte comando:
+```bash
+quasar build
+```
+
+### Para inicializar a aplicação localmente execute o seguinte comando:
 ```bash
 quasar dev
 ```
-
 
 ### Lint the files
 ```bash
@@ -22,12 +26,3 @@ yarn lint
 npm run lint
 ```
 
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
