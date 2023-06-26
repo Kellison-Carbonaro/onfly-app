@@ -1,4 +1,4 @@
-# Documentação do Aplicativoo QUASAR
+# Documentação do Aplicativo QUASAR
 
 Teste ONFLY vue 3 + pinia + QUASAR
 
