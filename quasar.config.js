@@ -17,8 +17,8 @@ module.exports = configure(function (/* ctx */) {
       // include: [],
       // exclude: [],
       // rawOptions: {},
-      warnings: true,
-      errors: true
+      warnings: false,
+      errors: false
     },
 
     // https://v2.quasar.dev/quasar-cli/prefetch-feature
@@ -58,7 +58,7 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16'
       },
 
-      vueRouterMode: 'hash' // available values: 'hash', 'history'
+      vueRouterMode: 'history' // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
@@ -85,13 +85,13 @@ module.exports = configure(function (/* ctx */) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
     devServer: {
       // https: true
+      port: 8080,
       open: true // opens browser window automatically
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#framework
     framework: {
       config: {},
-
       // iconSet: 'material-icons', // Quasar icon set
       // lang: 'en-US', // Quasar language pack
 
@@ -103,7 +103,10 @@ module.exports = configure(function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: [
+        'Notify',
+        'Dialog'
+      ]
     },
 
     // animations: 'all', // --- includes all animations
